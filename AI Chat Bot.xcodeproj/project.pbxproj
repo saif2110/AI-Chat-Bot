@@ -10,6 +10,7 @@
 		846956262A98C068001A8BCC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846956252A98C068001A8BCC /* Data.swift */; };
 		846956282A99217A001A8BCC /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846956272A99217A001A8BCC /* HistoryVC.swift */; };
 		8469562A2A9921D1001A8BCC /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846956292A9921D1001A8BCC /* HistoryCell.swift */; };
+		8469562D2A9A0668001A8BCC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8469562C2A9A0668001A8BCC /* StoreKit.framework */; };
 		848587FA2A950F99006DE950 /* ViewControllerGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848587F92A950F99006DE950 /* ViewControllerGenerate.swift */; };
 		84D3C2782A90BBCB00E762A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C2772A90BBCB00E762A6 /* AppDelegate.swift */; };
 		84D3C27C2A90BBCB00E762A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C27B2A90BBCB00E762A6 /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		846956252A98C068001A8BCC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		846956272A99217A001A8BCC /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		846956292A9921D1001A8BCC /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		8469562C2A9A0668001A8BCC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		848587F92A950F99006DE950 /* ViewControllerGenerate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerGenerate.swift; sourceTree = "<group>"; };
 		84D3C2742A90BBCB00E762A6 /* AI Chat Bot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Chat Bot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D3C2772A90BBCB00E762A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8469562D2A9A0668001A8BCC /* StoreKit.framework in Frameworks */,
 				84DFC6EB2A93B65200142263 /* RevenueCat in Frameworks */,
 				84D3C28D2A90CB0600E762A6 /* IQKeyboardManagerSwift in Frameworks */,
 			);
@@ -103,11 +106,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8469562B2A9A0668001A8BCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8469562C2A9A0668001A8BCC /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84D3C26B2A90BBCB00E762A6 = {
 			isa = PBXGroup;
 			children = (
 				84D3C2762A90BBCB00E762A6 /* AI Chat Bot */,
 				84D3C2752A90BBCB00E762A6 /* Products */,
+				8469562B2A9A0668001A8BCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +139,7 @@
 				84D3C28E2A90D59500E762A6 /* Cells */,
 				84D3C2772A90BBCB00E762A6 /* AppDelegate.swift */,
 				848587F92A950F99006DE950 /* ViewControllerGenerate.swift */,
+				846956272A99217A001A8BCC /* HistoryVC.swift */,
 				84D3C27B2A90BBCB00E762A6 /* ViewController.swift */,
 				84D3C27D2A90BBCB00E762A6 /* Main.storyboard */,
 				84D3C2802A90BBCC00E762A6 /* Assets.xcassets */,
@@ -135,7 +148,6 @@
 				84D3C2852A90BBCC00E762A6 /* Info.plist */,
 				84D3C2932A911EEF00E762A6 /* API.swift */,
 				846956252A98C068001A8BCC /* Data.swift */,
-				846956272A99217A001A8BCC /* HistoryVC.swift */,
 			);
 			path = "AI Chat Bot";
 			sourceTree = "<group>";

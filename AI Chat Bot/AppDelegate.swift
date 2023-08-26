@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Manager.numberofTimesAppOpen = Manager.numberofTimesAppOpen + 1
         
         
-        //Manager.isPro = true
+         //Manager.isPro = true
         
         Thread.sleep(forTimeInterval: 1.5)
         

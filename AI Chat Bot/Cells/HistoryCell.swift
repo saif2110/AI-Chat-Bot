@@ -9,6 +9,10 @@ import UIKit
 
 class HistoryCell: UITableViewCell {
 
+    @IBOutlet weak var quetion: UILabel!
+    @IBOutlet weak var answer: UILabel!
+    
+    var viewMoreButtonTapped:(()->())?
     
     static var identifire : String {
         return String(describing: self)
@@ -19,10 +23,8 @@ class HistoryCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBAction func viewMore(_ sender: UIButton) {
+        viewMoreButtonTapped?()
     }
-
+    
 }

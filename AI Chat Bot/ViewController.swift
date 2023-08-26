@@ -56,14 +56,28 @@ class ViewController: UIViewController {
             whenPROactivated()
         }
         
-        NotificationCenter.default.addObserver(self, selector: #selector(appWillResignActive), name: UIApplication.willResignActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(appWillTerminate), name: UIApplication.willTerminateNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(historyViewmoreTapped), name: Notification.Name("historyViewmoreTapped"), object: nil)
+    }
+    
+    @objc func appWillTerminate() {
+        guard allQuestionAnswers.count > 1 else {return}
+        Manager.historyArray.append(allQuestionAnswers)
         
     }
     
-    @objc func appWillResignActive() {
-        // This method will be called when the app is about to enter the background state.
-        // It's a good place to perform tasks before the app is terminated.
+    @objc func historyViewmoreTapped(notification: NSNotification){
+        if !(notification.userInfo?.isEmpty ?? true) {
+            let array = notification.userInfo?["array"]
+            self.allQuestionAnswers = array as! [String]
+            self.suggestionView.isHidden = true
+            self.tableView.reloadData()
+            let topIndexPath = IndexPath(row: 0, section: 0)
+            self.tableView.scrollToRow(at: topIndexPath, at: .top, animated: false)
+        }
     }
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }

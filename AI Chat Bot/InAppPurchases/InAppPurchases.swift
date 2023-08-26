@@ -134,12 +134,12 @@ class InAppPurchases: UIViewController {
     }
     
     func PerchesedComplte(){
-      
-      stopIndicator()
-      
-      Manager.isPro = true
-      isProTrigger?()
-      
+        
+        stopIndicator()
+        
+        Manager.isPro = true
+        isProTrigger?()
+        
         
         let alert = UIAlertController(title: "Congratulations !", message: "You are a pro member now. Enjoy seamless experience with all features unlock.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
@@ -157,7 +157,7 @@ class InAppPurchases: UIViewController {
             }}))
         
         self.present(alert, animated: true)
-    
+        
     }
     
     @IBAction func privacy(_ sender: Any) {
@@ -180,7 +180,7 @@ class InAppPurchases: UIViewController {
     }
     
     var indicator = UIActivityIndicatorView()
-
+    
     func startIndicator(selfo:UIViewController,UIView:UIView) {
         indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
         indicator.color = borderColor
@@ -188,12 +188,12 @@ class InAppPurchases: UIViewController {
         indicator.center = CGPoint(x: UIView.frame.size.width / 2.0, y: (UIView.frame.size.height) / 2.0)
         indicator.startAnimating()
     }
-
-
+    
+    
     func stopIndicator() {
         indicator.stopAnimating()
     }
-
+    
     @IBAction func skip(_ sender: Any) {
         self.dismiss(animated: true)
     }
@@ -258,12 +258,25 @@ struct Manager {
         }
     }
     
-    static var historyArray: [Any] {
+    static var historyArray: [[String]] {
         get {
-            return UserDefaults.standard.array(forKey: historyArrayKey) ?? [""]
+            return UserDefaults.standard.array(forKey: historyArrayKey) as? [[String]] ?? []
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: historyArrayKey)
+            var newArray = newValue
+            
+            //Item to remove
+            let itemcountTotel = 50
+            let ifThendelete = 10
+            if newArray.count > itemcountTotel {
+                
+                let itemsToRemove = newArray.count - itemcountTotel + ifThendelete
+                if itemsToRemove > 0 {
+                    newArray.removeFirst(itemsToRemove)
+                }
+            }
+            
+            UserDefaults.standard.set(newArray, forKey: historyArrayKey)
         }
     }
     

@@ -75,6 +75,19 @@ class ViewControllerGenerate: UIViewController {
             whenPROactivated()
         }
         
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(appWillTerminate), name: UIApplication.willTerminateNotification, object: nil)
+        
+    }
+    
+    @objc func appWillTerminate() {
+        guard allQuestionAnswers.count > 1 else {return}
+        Manager.historyArray.append(allQuestionAnswers)
+       
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     @objc func offerViewtapped(){
