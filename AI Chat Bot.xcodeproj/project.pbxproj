@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		846956262A98C068001A8BCC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846956252A98C068001A8BCC /* Data.swift */; };
+		846956282A99217A001A8BCC /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846956272A99217A001A8BCC /* HistoryVC.swift */; };
+		8469562A2A9921D1001A8BCC /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846956292A9921D1001A8BCC /* HistoryCell.swift */; };
+		848587FA2A950F99006DE950 /* ViewControllerGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848587F92A950F99006DE950 /* ViewControllerGenerate.swift */; };
+		84D3C2782A90BBCB00E762A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C2772A90BBCB00E762A6 /* AppDelegate.swift */; };
+		84D3C27C2A90BBCB00E762A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C27B2A90BBCB00E762A6 /* ViewController.swift */; };
+		84D3C27F2A90BBCB00E762A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C27D2A90BBCB00E762A6 /* Main.storyboard */; };
+		84D3C2812A90BBCC00E762A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2802A90BBCC00E762A6 /* Assets.xcassets */; };
+		84D3C2842A90BBCC00E762A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2822A90BBCC00E762A6 /* LaunchScreen.storyboard */; };
+		84D3C28D2A90CB0600E762A6 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84D3C28C2A90CB0600E762A6 /* IQKeyboardManagerSwift */; };
+		84D3C2902A90D5BC00E762A6 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C28F2A90D5BC00E762A6 /* QuestionCell.swift */; };
+		84D3C2922A90DA6400E762A6 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C2912A90DA6400E762A6 /* AnswerCell.swift */; };
+		84D3C2942A911EEF00E762A6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C2932A911EEF00E762A6 /* API.swift */; };
+		84D3C2AD2A91F7E200E762A6 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2962A91F7E100E762A6 /* Montserrat-VariableFont_wght.ttf */; };
+		84D3C2AE2A91F7E200E762A6 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2972A91F7E100E762A6 /* Montserrat-Italic-VariableFont_wght.ttf */; };
+		84D3C2AF2A91F7E200E762A6 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2992A91F7E100E762A6 /* Montserrat-LightItalic.ttf */; };
+		84D3C2B02A91F7E200E762A6 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C29A2A91F7E100E762A6 /* Montserrat-Medium.ttf */; };
+		84D3C2B12A91F7E200E762A6 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C29B2A91F7E100E762A6 /* Montserrat-BoldItalic.ttf */; };
+		84D3C2B22A91F7E200E762A6 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C29C2A91F7E100E762A6 /* Montserrat-Light.ttf */; };
+		84D3C2B32A91F7E200E762A6 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C29D2A91F7E100E762A6 /* Montserrat-ThinItalic.ttf */; };
+		84D3C2B42A91F7E200E762A6 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C29E2A91F7E100E762A6 /* Montserrat-ExtraLight.ttf */; };
+		84D3C2B52A91F7E200E762A6 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C29F2A91F7E100E762A6 /* Montserrat-Thin.ttf */; };
+		84D3C2B62A91F7E200E762A6 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2A02A91F7E100E762A6 /* Montserrat-Bold.ttf */; };
+		84D3C2B72A91F7E200E762A6 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2A12A91F7E100E762A6 /* Montserrat-MediumItalic.ttf */; };
+		84D3C2B82A91F7E200E762A6 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2A22A91F7E100E762A6 /* Montserrat-BlackItalic.ttf */; };
+		84D3C2B92A91F7E200E762A6 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2A32A91F7E100E762A6 /* Montserrat-SemiBold.ttf */; };
+		84D3C2BA2A91F7E200E762A6 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2A42A91F7E100E762A6 /* Montserrat-ExtraLightItalic.ttf */; };
+		84D3C2BB2A91F7E200E762A6 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2A52A91F7E100E762A6 /* Montserrat-ExtraBold.ttf */; };
+		84D3C2BC2A91F7E200E762A6 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2A62A91F7E100E762A6 /* Montserrat-Black.ttf */; };
+		84D3C2BD2A91F7E200E762A6 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2A72A91F7E100E762A6 /* Montserrat-Regular.ttf */; };
+		84D3C2BE2A91F7E200E762A6 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2A82A91F7E100E762A6 /* Montserrat-Italic.ttf */; };
+		84D3C2BF2A91F7E200E762A6 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2A92A91F7E200E762A6 /* Montserrat-SemiBoldItalic.ttf */; };
+		84D3C2C02A91F7E200E762A6 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2AA2A91F7E200E762A6 /* Montserrat-ExtraBoldItalic.ttf */; };
+		84D3C2C12A91F7E200E762A6 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2AB2A91F7E200E762A6 /* OFL.txt */; };
+		84D3C2C22A91F7E200E762A6 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2AC2A91F7E200E762A6 /* README.txt */; };
+		84D3C2C62A92405100E762A6 /* InAppPurchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C2C42A92405100E762A6 /* InAppPurchases.swift */; };
+		84D3C2C72A92405100E762A6 /* InAppPurchases.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2C52A92405100E762A6 /* InAppPurchases.xib */; };
+		84DFC6EB2A93B65200142263 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 84DFC6EA2A93B65200142263 /* RevenueCat */; };
+		84DFC6ED2A94AA5900142263 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DFC6EC2A94AA5900142263 /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		846956252A98C068001A8BCC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		846956272A99217A001A8BCC /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		846956292A9921D1001A8BCC /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		848587F92A950F99006DE950 /* ViewControllerGenerate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerGenerate.swift; sourceTree = "<group>"; };
+		84D3C2742A90BBCB00E762A6 /* AI Chat Bot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Chat Bot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D3C2772A90BBCB00E762A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84D3C27B2A90BBCB00E762A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84D3C27E2A90BBCB00E762A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84D3C2802A90BBCC00E762A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84D3C2832A90BBCC00E762A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84D3C2852A90BBCC00E762A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D3C28F2A90D5BC00E762A6 /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		84D3C2912A90DA6400E762A6 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		84D3C2932A911EEF00E762A6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		84D3C2962A91F7E100E762A6 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		84D3C2972A91F7E100E762A6 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		84D3C2992A91F7E100E762A6 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		84D3C29A2A91F7E100E762A6 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		84D3C29B2A91F7E100E762A6 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		84D3C29C2A91F7E100E762A6 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		84D3C29D2A91F7E100E762A6 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		84D3C29E2A91F7E100E762A6 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		84D3C29F2A91F7E100E762A6 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		84D3C2A02A91F7E100E762A6 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		84D3C2A12A91F7E100E762A6 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		84D3C2A22A91F7E100E762A6 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		84D3C2A32A91F7E100E762A6 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		84D3C2A42A91F7E100E762A6 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		84D3C2A52A91F7E100E762A6 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		84D3C2A62A91F7E100E762A6 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		84D3C2A72A91F7E100E762A6 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		84D3C2A82A91F7E100E762A6 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		84D3C2A92A91F7E200E762A6 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		84D3C2AA2A91F7E200E762A6 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		84D3C2AB2A91F7E200E762A6 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		84D3C2AC2A91F7E200E762A6 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		84D3C2C42A92405100E762A6 /* InAppPurchases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchases.swift; sourceTree = "<group>"; };
+		84D3C2C52A92405100E762A6 /* InAppPurchases.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InAppPurchases.xib; sourceTree = "<group>"; };
+		84DFC6EC2A94AA5900142263 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84D3C2712A90BBCB00E762A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DFC6EB2A93B65200142263 /* RevenueCat in Frameworks */,
+				84D3C28D2A90CB0600E762A6 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84D3C26B2A90BBCB00E762A6 = {
+			isa = PBXGroup;
+			children = (
+				84D3C2762A90BBCB00E762A6 /* AI Chat Bot */,
+				84D3C2752A90BBCB00E762A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84D3C2752A90BBCB00E762A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84D3C2742A90BBCB00E762A6 /* AI Chat Bot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84D3C2762A90BBCB00E762A6 /* AI Chat Bot */ = {
+			isa = PBXGroup;
+			children = (
+				84D3C2C32A92402300E762A6 /* InAppPurchases */,
+				84D3C2952A91F7E100E762A6 /* Montserrat */,
+				84D3C28E2A90D59500E762A6 /* Cells */,
+				84D3C2772A90BBCB00E762A6 /* AppDelegate.swift */,
+				848587F92A950F99006DE950 /* ViewControllerGenerate.swift */,
+				84D3C27B2A90BBCB00E762A6 /* ViewController.swift */,
+				84D3C27D2A90BBCB00E762A6 /* Main.storyboard */,
+				84D3C2802A90BBCC00E762A6 /* Assets.xcassets */,
+				84D3C2822A90BBCC00E762A6 /* LaunchScreen.storyboard */,
+				84DFC6EC2A94AA5900142263 /* icon.png */,
+				84D3C2852A90BBCC00E762A6 /* Info.plist */,
+				84D3C2932A911EEF00E762A6 /* API.swift */,
+				846956252A98C068001A8BCC /* Data.swift */,
+				846956272A99217A001A8BCC /* HistoryVC.swift */,
+			);
+			path = "AI Chat Bot";
+			sourceTree = "<group>";
+		};
+		84D3C28E2A90D59500E762A6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84D3C2912A90DA6400E762A6 /* AnswerCell.swift */,
+				84D3C28F2A90D5BC00E762A6 /* QuestionCell.swift */,
+				846956292A9921D1001A8BCC /* HistoryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84D3C2952A91F7E100E762A6 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				84D3C2962A91F7E100E762A6 /* Montserrat-VariableFont_wght.ttf */,
+				84D3C2972A91F7E100E762A6 /* Montserrat-Italic-VariableFont_wght.ttf */,
+				84D3C2982A91F7E100E762A6 /* static */,
+				84D3C2AB2A91F7E200E762A6 /* OFL.txt */,
+				84D3C2AC2A91F7E200E762A6 /* README.txt */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		84D3C2982A91F7E100E762A6 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				84D3C2992A91F7E100E762A6 /* Montserrat-LightItalic.ttf */,
+				84D3C29A2A91F7E100E762A6 /* Montserrat-Medium.ttf */,
+				84D3C29B2A91F7E100E762A6 /* Montserrat-BoldItalic.ttf */,
+				84D3C29C2A91F7E100E762A6 /* Montserrat-Light.ttf */,
+				84D3C29D2A91F7E100E762A6 /* Montserrat-ThinItalic.ttf */,
+				84D3C29E2A91F7E100E762A6 /* Montserrat-ExtraLight.ttf */,
+				84D3C29F2A91F7E100E762A6 /* Montserrat-Thin.ttf */,
+				84D3C2A02A91F7E100E762A6 /* Montserrat-Bold.ttf */,
+				84D3C2A12A91F7E100E762A6 /* Montserrat-MediumItalic.ttf */,
+				84D3C2A22A91F7E100E762A6 /* Montserrat-BlackItalic.ttf */,
+				84D3C2A32A91F7E100E762A6 /* Montserrat-SemiBold.ttf */,
+				84D3C2A42A91F7E100E762A6 /* Montserrat-ExtraLightItalic.ttf */,
+				84D3C2A52A91F7E100E762A6 /* Montserrat-ExtraBold.ttf */,
+				84D3C2A62A91F7E100E762A6 /* Montserrat-Black.ttf */,
+				84D3C2A72A91F7E100E762A6 /* Montserrat-Regular.ttf */,
+				84D3C2A82A91F7E100E762A6 /* Montserrat-Italic.ttf */,
+				84D3C2A92A91F7E200E762A6 /* Montserrat-SemiBoldItalic.ttf */,
+				84D3C2AA2A91F7E200E762A6 /* Montserrat-ExtraBoldItalic.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		84D3C2C32A92402300E762A6 /* InAppPurchases */ = {
+			isa = PBXGroup;
+			children = (
+				84D3C2C42A92405100E762A6 /* InAppPurchases.swift */,
+				84D3C2C52A92405100E762A6 /* InAppPurchases.xib */,
+			);
+			path = InAppPurchases;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84D3C2732A90BBCB00E762A6 /* AI Chat Bot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D3C2882A90BBCC00E762A6 /* Build configuration list for PBXNativeTarget "AI Chat Bot" */;
+			buildPhases = (
+				84D3C2702A90BBCB00E762A6 /* Sources */,
+				84D3C2712A90BBCB00E762A6 /* Frameworks */,
+				84D3C2722A90BBCB00E762A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AI Chat Bot";
+			packageProductDependencies = (
+				84D3C28C2A90CB0600E762A6 /* IQKeyboardManagerSwift */,
+				84DFC6EA2A93B65200142263 /* RevenueCat */,
+			);
+			productName = "AI Chat Bot";
+			productReference = 84D3C2742A90BBCB00E762A6 /* AI Chat Bot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84D3C26C2A90BBCB00E762A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					84D3C2732A90BBCB00E762A6 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 84D3C26F2A90BBCB00E762A6 /* Build configuration list for PBXProject "AI Chat Bot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84D3C26B2A90BBCB00E762A6;
+			packageReferences = (
+				84D3C28B2A90CB0600E762A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				84DFC6E92A93B65200142263 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
+			productRefGroup = 84D3C2752A90BBCB00E762A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84D3C2732A90BBCB00E762A6 /* AI Chat Bot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84D3C2722A90BBCB00E762A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D3C2B12A91F7E200E762A6 /* Montserrat-BoldItalic.ttf in Resources */,
+				84D3C2AE2A91F7E200E762A6 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
+				84DFC6ED2A94AA5900142263 /* icon.png in Resources */,
+				84D3C2B72A91F7E200E762A6 /* Montserrat-MediumItalic.ttf in Resources */,
+				84D3C2C72A92405100E762A6 /* InAppPurchases.xib in Resources */,
+				84D3C2B82A91F7E200E762A6 /* Montserrat-BlackItalic.ttf in Resources */,
+				84D3C2AD2A91F7E200E762A6 /* Montserrat-VariableFont_wght.ttf in Resources */,
+				84D3C2B22A91F7E200E762A6 /* Montserrat-Light.ttf in Resources */,
+				84D3C2C12A91F7E200E762A6 /* OFL.txt in Resources */,
+				84D3C2BE2A91F7E200E762A6 /* Montserrat-Italic.ttf in Resources */,
+				84D3C2C02A91F7E200E762A6 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				84D3C2B62A91F7E200E762A6 /* Montserrat-Bold.ttf in Resources */,
+				84D3C2BB2A91F7E200E762A6 /* Montserrat-ExtraBold.ttf in Resources */,
+				84D3C2BD2A91F7E200E762A6 /* Montserrat-Regular.ttf in Resources */,
+				84D3C2B32A91F7E200E762A6 /* Montserrat-ThinItalic.ttf in Resources */,
+				84D3C2AF2A91F7E200E762A6 /* Montserrat-LightItalic.ttf in Resources */,
+				84D3C2C22A91F7E200E762A6 /* README.txt in Resources */,
+				84D3C2BF2A91F7E200E762A6 /* Montserrat-SemiBoldItalic.ttf in Resources */,
+				84D3C2B42A91F7E200E762A6 /* Montserrat-ExtraLight.ttf in Resources */,
+				84D3C2B02A91F7E200E762A6 /* Montserrat-Medium.ttf in Resources */,
+				84D3C2BC2A91F7E200E762A6 /* Montserrat-Black.ttf in Resources */,
+				84D3C2842A90BBCC00E762A6 /* LaunchScreen.storyboard in Resources */,
+				84D3C2812A90BBCC00E762A6 /* Assets.xcassets in Resources */,
+				84D3C2B52A91F7E200E762A6 /* Montserrat-Thin.ttf in Resources */,
+				84D3C2BA2A91F7E200E762A6 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				84D3C2B92A91F7E200E762A6 /* Montserrat-SemiBold.ttf in Resources */,
+				84D3C27F2A90BBCB00E762A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84D3C2702A90BBCB00E762A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D3C2902A90D5BC00E762A6 /* QuestionCell.swift in Sources */,
+				848587FA2A950F99006DE950 /* ViewControllerGenerate.swift in Sources */,
+				84D3C2C62A92405100E762A6 /* InAppPurchases.swift in Sources */,
+				84D3C27C2A90BBCB00E762A6 /* ViewController.swift in Sources */,
+				8469562A2A9921D1001A8BCC /* HistoryCell.swift in Sources */,
+				84D3C2782A90BBCB00E762A6 /* AppDelegate.swift in Sources */,
+				84D3C2922A90DA6400E762A6 /* AnswerCell.swift in Sources */,
+				84D3C2942A911EEF00E762A6 /* API.swift in Sources */,
+				846956282A99217A001A8BCC /* HistoryVC.swift in Sources */,
+				846956262A98C068001A8BCC /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84D3C27D2A90BBCB00E762A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D3C27E2A90BBCB00E762A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84D3C2822A90BBCC00E762A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D3C2832A90BBCC00E762A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84D3C2862A90BBCC00E762A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84D3C2872A90BBCC00E762A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84D3C2892A90BBCC00E762A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 959YZPX78D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AI Chat Bot/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "apps15.AI-Chat-Bot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84D3C28A2A90BBCC00E762A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 959YZPX78D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AI Chat Bot/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "apps15.AI-Chat-Bot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84D3C26F2A90BBCB00E762A6 /* Build configuration list for PBXProject "AI Chat Bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D3C2862A90BBCC00E762A6 /* Debug */,
+				84D3C2872A90BBCC00E762A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D3C2882A90BBCC00E762A6 /* Build configuration list for PBXNativeTarget "AI Chat Bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D3C2892A90BBCC00E762A6 /* Debug */,
+				84D3C28A2A90BBCC00E762A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84D3C28B2A90CB0600E762A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		84DFC6E92A93B65200142263 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84D3C28C2A90CB0600E762A6 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84D3C28B2A90CB0600E762A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		84DFC6EA2A93B65200142263 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84DFC6E92A93B65200142263 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 84D3C26C2A90BBCB00E762A6 /* Project object */;
+}
