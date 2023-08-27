@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AVx-Rz-wtt">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ioy-G8-DKj">
+            <objects>
+                <navigationController storyboardIdentifier="Nevigation" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="AVx-Rz-wtt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zyv-P2-tjL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Am4-fr-mab">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Gxi-9Y-SlH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jo0-FY-cMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-647" y="-8"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome1" translatesAutoresizingMaskIntoConstraints="NO" id="7Xc-Dv-NgK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLB-bF-A6R" customClass="AnimateButton" customModule="AI_Chat_Bot" customModuleProvider="target">
+                                <rect key="frame" x="16" y="738" width="361" height="55"/>
+                                <color key="backgroundColor" red="0.3058823645" green="0.68235301969999995" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="7cg-iH-xnj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="27.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="qPP-Du-k7z" kind="show" id="dhJ-09-UJ8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7Xc-Dv-NgK" secondAttribute="bottom" id="RO8-88-1gB"/>
+                            <constraint firstItem="7Xc-Dv-NgK" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="TvT-IU-vCV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aLB-bF-A6R" secondAttribute="trailing" constant="16" id="YEU-7W-qO2"/>
+                            <constraint firstItem="7Xc-Dv-NgK" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" id="d2i-Mi-wdi"/>
+                            <constraint firstItem="aLB-bF-A6R" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="irU-jI-ujJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="aLB-bF-A6R" secondAttribute="bottom" constant="25" id="kGk-xA-9Cu"/>
+                            <constraint firstItem="7Xc-Dv-NgK" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="trU-EJ-qFh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RTB-ee-gHK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="-8"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qa7-7Q-bTn">
+            <objects>
+                <viewController id="qPP-Du-k7z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ds-5O-yaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome2" translatesAutoresizingMaskIntoConstraints="NO" id="iNw-md-KVs">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8Y-zM-det" customClass="AnimateButton" customModule="AI_Chat_Bot" customModuleProvider="target">
+                                <rect key="frame" x="16" y="743" width="361" height="55"/>
+                                <color key="backgroundColor" red="0.3058823645" green="0.68235301969999995" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="xoe-jF-Br1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="27.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ceH-4m-KsA" kind="show" id="qEL-VP-7VR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat Bot AI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGs-jH-UfJ">
+                                <rect key="frame" x="16" y="606.33333333333337" width="361" height="42.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="35"/>
+                                <color key="textColor" red="0.3058823645" green="0.68235301969999995" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chatbot AI is a powerful AI assistant here to provide you with valuable help and support and guidance." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CC2-MD-cPq">
+                                <rect key="frame" x="20" y="663" width="353" height="55"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5ZJ-Dw-5hg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5ZJ-Dw-5hg" firstAttribute="trailing" secondItem="WGs-jH-UfJ" secondAttribute="trailing" constant="16" id="4xL-lb-aQW"/>
+                            <constraint firstItem="iNw-md-KVs" firstAttribute="trailing" secondItem="0ds-5O-yaZ" secondAttribute="trailing" id="9JQ-r7-E4J"/>
+                            <constraint firstItem="CC2-MD-cPq" firstAttribute="top" secondItem="WGs-jH-UfJ" secondAttribute="bottom" constant="14" id="GcG-sc-mKg"/>
+                            <constraint firstItem="5ZJ-Dw-5hg" firstAttribute="trailing" secondItem="n8Y-zM-det" secondAttribute="trailing" constant="16" id="HLg-gS-ruP"/>
+                            <constraint firstItem="iNw-md-KVs" firstAttribute="top" secondItem="0ds-5O-yaZ" secondAttribute="top" id="HLw-w7-uw3"/>
+                            <constraint firstItem="5ZJ-Dw-5hg" firstAttribute="trailing" secondItem="CC2-MD-cPq" secondAttribute="trailing" constant="20" id="MU5-A8-b4Z"/>
+                            <constraint firstItem="iNw-md-KVs" firstAttribute="leading" secondItem="0ds-5O-yaZ" secondAttribute="leading" id="VMx-Ju-MME"/>
+                            <constraint firstItem="CC2-MD-cPq" firstAttribute="leading" secondItem="5ZJ-Dw-5hg" secondAttribute="leading" constant="20" id="Wbw-XJ-Gx2"/>
+                            <constraint firstItem="WGs-jH-UfJ" firstAttribute="leading" secondItem="5ZJ-Dw-5hg" secondAttribute="leading" constant="16" id="Z6R-hf-yIg"/>
+                            <constraint firstItem="n8Y-zM-det" firstAttribute="top" secondItem="CC2-MD-cPq" secondAttribute="bottom" constant="25" id="e7V-U8-bOt"/>
+                            <constraint firstItem="n8Y-zM-det" firstAttribute="leading" secondItem="5ZJ-Dw-5hg" secondAttribute="leading" constant="16" id="o63-H6-0PW"/>
+                            <constraint firstAttribute="bottom" secondItem="iNw-md-KVs" secondAttribute="bottom" id="oHH-zq-y8b"/>
+                            <constraint firstItem="5ZJ-Dw-5hg" firstAttribute="bottom" secondItem="n8Y-zM-det" secondAttribute="bottom" constant="20" id="xzV-t9-bQO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bGf-WT-FNi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVN-Oi-Fko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116.793893129771" y="-8.4507042253521139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zaD-aN-p9t">
+            <objects>
+                <viewController id="ceH-4m-KsA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JbG-3S-LNv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome3" translatesAutoresizingMaskIntoConstraints="NO" id="xLX-WI-0YL">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="me2-sd-fT6" customClass="AnimateButton" customModule="AI_Chat_Bot" customModuleProvider="target">
+                                <rect key="frame" x="16" y="743" width="361" height="55"/>
+                                <color key="backgroundColor" red="0.3058823645" green="0.68235301969999995" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="1L8-MK-wO9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="27.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generate Anything" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zz-2k-ckW">
+                                <rect key="frame" x="16" y="614.66666666666663" width="361" height="34.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="28"/>
+                                <color key="textColor" red="0.3058823645" green="0.68235301969999995" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chatbot AI capable of swiftly generating content for you, and you can effortlessly tailor it to your needs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wF-4b-Exd">
+                                <rect key="frame" x="20" y="663" width="353" height="55"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tuf-4r-LId"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="me2-sd-fT6" firstAttribute="top" secondItem="8wF-4b-Exd" secondAttribute="bottom" constant="25" id="2dt-8k-3cc"/>
+                            <constraint firstItem="Tuf-4r-LId" firstAttribute="bottom" secondItem="me2-sd-fT6" secondAttribute="bottom" constant="20" id="67s-tX-CbD"/>
+                            <constraint firstItem="xLX-WI-0YL" firstAttribute="trailing" secondItem="JbG-3S-LNv" secondAttribute="trailing" id="ADo-tP-k1l"/>
+                            <constraint firstItem="Tuf-4r-LId" firstAttribute="trailing" secondItem="me2-sd-fT6" secondAttribute="trailing" constant="16" id="FdX-b3-cbM"/>
+                            <constraint firstItem="xLX-WI-0YL" firstAttribute="leading" secondItem="JbG-3S-LNv" secondAttribute="leading" id="Iqu-dw-ckc"/>
+                            <constraint firstItem="xLX-WI-0YL" firstAttribute="top" secondItem="JbG-3S-LNv" secondAttribute="top" id="SGv-cb-GpA"/>
+                            <constraint firstAttribute="bottom" secondItem="xLX-WI-0YL" secondAttribute="bottom" id="T96-rl-mZb"/>
+                            <constraint firstItem="Tuf-4r-LId" firstAttribute="trailing" secondItem="1Zz-2k-ckW" secondAttribute="trailing" constant="16" id="Z1T-XB-9A0"/>
+                            <constraint firstItem="me2-sd-fT6" firstAttribute="leading" secondItem="Tuf-4r-LId" secondAttribute="leading" constant="16" id="ZQT-6u-y3g"/>
+                            <constraint firstItem="8wF-4b-Exd" firstAttribute="top" secondItem="1Zz-2k-ckW" secondAttribute="bottom" constant="14" id="ZYi-2l-gff"/>
+                            <constraint firstItem="1Zz-2k-ckW" firstAttribute="leading" secondItem="Tuf-4r-LId" secondAttribute="leading" constant="16" id="aJM-ql-g4H"/>
+                            <constraint firstItem="Tuf-4r-LId" firstAttribute="trailing" secondItem="8wF-4b-Exd" secondAttribute="trailing" constant="20" id="nkH-dd-DU8"/>
+                            <constraint firstItem="8wF-4b-Exd" firstAttribute="leading" secondItem="Tuf-4r-LId" secondAttribute="leading" constant="20" id="xat-RV-62F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ogE-oS-LrV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgY-bj-upH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1943" y="-8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="welcome1" width="300" height="650.33331298828125"/>
+        <image name="welcome2" width="428" height="926"/>
+        <image name="welcome3" width="428" height="926"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

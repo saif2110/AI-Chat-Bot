@@ -9,6 +9,7 @@ import UIKit
 
 class ViewControllerGenerate: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var topicLabal: UILabel!
     
     //StackViewEmails
@@ -21,7 +22,6 @@ class ViewControllerGenerate: UIViewController {
     @IBOutlet weak var que7: UIButton!
     @IBOutlet weak var que8: UIButton!
     @IBOutlet weak var que9: UIButton!
-    
     
     
     @IBOutlet weak var topNevigationView: UIView!
@@ -121,6 +121,7 @@ class ViewControllerGenerate: UIViewController {
     
     @IBAction func depthAction(_ sender: UIButton) {
         suggestionView.isHidden = false
+        scrollView.setContentOffset(.zero, animated: true)
         topicLabal.text = "Generate \(topic[sender.tag]) Prompt !"
         selectButton(sender:sender)
         addIntostackQuetions(arraofString: mainPromtArray[sender.tag])

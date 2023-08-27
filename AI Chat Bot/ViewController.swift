@@ -28,9 +28,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var heigh: UIButton!
     
     
+    func onBoardingProcess(){
+        //if Manager.numberofTimesAppOpen == 1 {
+        DispatchQueue.main.async {
+            let story = UIStoryboard(name: "Welcome", bundle: nil)
+            let vc = story.instantiateViewController(withIdentifier: "Nevigation")
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: false)
+        }
+            
+        //}
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        onBoardingProcess()
         
         let tap = UITapGestureRecognizer()
         tap.addTarget(self, action: #selector(offerViewtapped))
