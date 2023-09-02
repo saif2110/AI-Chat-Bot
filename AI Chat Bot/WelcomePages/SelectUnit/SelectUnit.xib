@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectUnit" customModule="AI_Chat_Bot" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="zh8-Ze-u9d" id="XiN-7y-jck"/>
+                <outlet property="getStartedOutlet" destination="lXK-ub-goz" id="dw1-fs-s9I"/>
+                <outlet property="view" destination="ac9-1U-pFT" id="SV6-pG-grh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ac9-1U-pFT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your urgency to use this app for research purpose ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BHd-6k-Ue5">
+                    <rect key="frame" x="20" y="123.99999999999999" width="353" height="51.333333333333329"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="21"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="1m8-hZ-Xbn">
+                    <rect key="frame" x="20" y="74" width="30" height="30"/>
+                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fZd-Rz-ch4"/>
+                        <constraint firstAttribute="width" constant="30" id="vrp-9i-hHK"/>
+                    </constraints>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zh8-Ze-u9d">
+                    <rect key="frame" x="0.0" y="195.33333333333331" width="393" height="532.66666666666674"/>
+                    <color key="backgroundColor" red="0.1449999958" green="0.1449999958" blue="0.1449999958" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="TWn-jx-p7p">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="10"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXK-ub-goz">
+                    <rect key="frame" x="15" y="748" width="363" height="55"/>
+                    <color key="backgroundColor" red="0.3058823645" green="0.68235301969999995" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="mCd-Ul-Sq9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" systemColor="systemGray5Color"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                            <real key="value" value="27.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="getStarted:" destination="-1" eventType="touchUpInside" id="oOj-mD-b4F"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="bDx-0v-vpB"/>
+            <color key="backgroundColor" red="0.1449999958" green="0.1449999958" blue="0.1449999958" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="zh8-Ze-u9d" firstAttribute="trailing" secondItem="bDx-0v-vpB" secondAttribute="trailing" id="3ur-g3-rbk"/>
+                <constraint firstItem="1m8-hZ-Xbn" firstAttribute="leading" secondItem="bDx-0v-vpB" secondAttribute="leading" constant="20" id="4N0-IP-YEt"/>
+                <constraint firstItem="zh8-Ze-u9d" firstAttribute="leading" secondItem="bDx-0v-vpB" secondAttribute="leading" id="59q-ik-zka"/>
+                <constraint firstItem="bDx-0v-vpB" firstAttribute="bottom" secondItem="lXK-ub-goz" secondAttribute="bottom" constant="15" id="75N-Bd-snf"/>
+                <constraint firstItem="lXK-ub-goz" firstAttribute="leading" secondItem="bDx-0v-vpB" secondAttribute="leading" constant="15" id="JOW-aT-gcJ"/>
+                <constraint firstItem="1m8-hZ-Xbn" firstAttribute="top" secondItem="bDx-0v-vpB" secondAttribute="top" constant="15" id="d4H-av-2bv"/>
+                <constraint firstItem="BHd-6k-Ue5" firstAttribute="leading" secondItem="bDx-0v-vpB" secondAttribute="leading" constant="20" id="d4n-Xa-3kd"/>
+                <constraint firstItem="bDx-0v-vpB" firstAttribute="trailing" secondItem="lXK-ub-goz" secondAttribute="trailing" constant="15" id="ens-s1-eXh"/>
+                <constraint firstItem="zh8-Ze-u9d" firstAttribute="top" secondItem="BHd-6k-Ue5" secondAttribute="bottom" constant="20" id="hBU-Ko-hJY"/>
+                <constraint firstItem="bDx-0v-vpB" firstAttribute="trailing" secondItem="BHd-6k-Ue5" secondAttribute="trailing" constant="20" id="mZj-eK-eH5"/>
+                <constraint firstItem="lXK-ub-goz" firstAttribute="top" secondItem="zh8-Ze-u9d" secondAttribute="bottom" constant="20" id="uOe-Ax-mrc"/>
+                <constraint firstItem="BHd-6k-Ue5" firstAttribute="top" secondItem="1m8-hZ-Xbn" secondAttribute="bottom" constant="20" id="zls-e2-8wK"/>
+            </constraints>
+            <point key="canvasLocation" x="111.59420289855073" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon.png" width="829" height="575"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

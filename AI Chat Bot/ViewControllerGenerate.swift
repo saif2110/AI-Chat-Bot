@@ -61,11 +61,6 @@ class ViewControllerGenerate: UIViewController {
             self.tableView.dataSource = self
             self.tableView.delegate = self
         
-            
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
-            openInappPurchase(context: self)
-        })
-    
         
         isProTrigger = {
             self.whenPROactivated()

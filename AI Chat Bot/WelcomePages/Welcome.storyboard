@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="1116.793893129771" y="-8.4507042253521139"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome End-->
         <scene sceneID="zaD-aN-p9t">
             <objects>
-                <viewController id="ceH-4m-KsA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeEnd" id="ceH-4m-KsA" customClass="WelcomeEnd" customModule="AI_Chat_Bot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JbG-3S-LNv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +183,9 @@
                                         <real key="value" value="27.5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="contineBotton:" destination="ceH-4m-KsA" eventType="touchUpInside" id="aks-i4-9n7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generate Anything" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zz-2k-ckW">
                                 <rect key="frame" x="16" y="614.66666666666663" width="361" height="34.333333333333371"/>

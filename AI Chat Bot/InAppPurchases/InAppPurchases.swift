@@ -22,6 +22,7 @@ class InAppPurchases: UIViewController {
     @IBOutlet weak var weekTitle: UILabel!
     @IBOutlet weak var yearlyTitle: UILabel!
     
+    @IBOutlet weak var scrollView: UIScrollView!
     
     let backGroundColor = #colorLiteral(red: 0.05986089259, green: 0.07497294992, blue: 0.08328766376, alpha: 1)
     let selectedColor = #colorLiteral(red: 0, green: 0.6928513646, blue: 0.6272605658, alpha: 0.2620550497)
@@ -36,6 +37,9 @@ class InAppPurchases: UIViewController {
     @IBOutlet weak var weeklyButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        self.scrollView.contentInsetAdjustmentBehavior = .never
+        
         weeklyButton.borderColorV = borderColor
         yearlyButton.borderColorV = borderColor
         yearlyButton.backgroundColor = selectedColor

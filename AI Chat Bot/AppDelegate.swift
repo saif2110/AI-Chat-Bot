@@ -9,6 +9,7 @@ import UIKit
 import AVFoundation
 import IQKeyboardManagerSwift
 import RevenueCat
+import Firebase
 
 
 let backGroundColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.1176470588, alpha: 1)
@@ -29,17 +30,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enableAutoToolbar = false
         Purchases.logLevel = .error
         Purchases.configure(withAPIKey: "appl_gXKAzHloNrDTyZHqrdGjtUISffQ")
+
         
         Manager.numberofTimesAppOpen = Manager.numberofTimesAppOpen + 1
         
         
-         //Manager.isPro = true
-        
+         //Manager.isPro = false
+        FirebaseApp.configure()
+        isSubsActive()
         Thread.sleep(forTimeInterval: 1.5)
         
         return true
     }
     
+    func isSubsActive(){
+        
+        Purchases.shared.getCustomerInfo { (purchaserInfo, error) in
+            
+            if !(purchaserInfo?.entitlements.active.isEmpty ?? true) {
+                Manager.isPro = true
+            }else{
+                Manager.isPro = false
+            }
+            
+        }
+    }
+    
+}
+
+extension AppDelegate: PurchasesDelegate {
+    func purchases(_ purchases: Purchases, readyForPromotedProduct product: StoreProduct, purchase makeDeferredPurchase: @escaping StartPurchaseBlock) {
+        makeDeferredPurchase { (transaction, customerInfo, error, success) in
+            print("Yay")
+        }
+    }
 }
 
 

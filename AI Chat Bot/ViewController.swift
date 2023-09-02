@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     
     func onBoardingProcess(){
-        //if Manager.numberofTimesAppOpen == 1 {
+        if Manager.numberofTimesAppOpen == 1 {
         DispatchQueue.main.async {
             let story = UIStoryboard(name: "Welcome", bundle: nil)
             let vc = story.instantiateViewController(withIdentifier: "Nevigation")
@@ -37,7 +37,9 @@ class ViewController: UIViewController {
             self.present(vc, animated: false)
         }
             
-        //}
+        }else{
+            openInappPurchase(context: self)
+        }
     }
     
     override func viewDidLoad() {

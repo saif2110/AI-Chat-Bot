@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="selectType" id="gTV-IL-0wX" customClass="selectType" customModule="AI_Chat_Bot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gk-4x-41a">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IF0-Fu-pFx">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="captions.bubble.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UA6-PI-u82">
+                                        <rect key="frame" x="10" y="18" width="15" height="14.5"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="HBY-1X-dXz"/>
+                                            <constraint firstAttribute="width" constant="15" id="wWL-xM-kWt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Svq-tu-oCR">
+                                        <rect key="frame" x="35" y="8" width="137" height="34"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Svq-tu-oCR" secondAttribute="trailing" constant="8" id="9Kb-V9-9Ec"/>
+                                    <constraint firstItem="Svq-tu-oCR" firstAttribute="leading" secondItem="UA6-PI-u82" secondAttribute="trailing" constant="10" id="CSV-iV-ulx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Svq-tu-oCR" secondAttribute="bottom" constant="8" id="Lne-gY-Tlt"/>
+                                    <constraint firstItem="UA6-PI-u82" firstAttribute="leading" secondItem="IF0-Fu-pFx" secondAttribute="leading" constant="10" id="OHA-Ro-6I5"/>
+                                    <constraint firstItem="Svq-tu-oCR" firstAttribute="top" secondItem="IF0-Fu-pFx" secondAttribute="top" constant="8" id="UdD-eW-0sj"/>
+                                    <constraint firstItem="UA6-PI-u82" firstAttribute="centerY" secondItem="IF0-Fu-pFx" secondAttribute="centerY" id="W84-IO-lMg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IF0-Fu-pFx" secondAttribute="bottom" id="1Gk-Gi-5AT"/>
+                            <constraint firstItem="IF0-Fu-pFx" firstAttribute="top" secondItem="6Gk-4x-41a" secondAttribute="top" id="PXS-Df-6ko"/>
+                            <constraint firstAttribute="trailing" secondItem="IF0-Fu-pFx" secondAttribute="trailing" id="Us1-5n-eOG"/>
+                            <constraint firstItem="IF0-Fu-pFx" firstAttribute="leading" secondItem="6Gk-4x-41a" secondAttribute="leading" id="h6X-8k-aet"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6Gk-4x-41a" secondAttribute="bottom" id="Hwa-dS-6Gq"/>
+                <constraint firstItem="6Gk-4x-41a" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="N2U-8Q-sFe"/>
+                <constraint firstAttribute="trailing" secondItem="6Gk-4x-41a" secondAttribute="trailing" id="gt4-QO-PG9"/>
+                <constraint firstItem="6Gk-4x-41a" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iHS-6H-2Qr"/>
+            </constraints>
+            <size key="customSize" width="180" height="50"/>
+            <connections>
+                <outlet property="blueView" destination="IF0-Fu-pFx" id="1tq-vo-GEZ"/>
+                <outlet property="imageVIew" destination="UA6-PI-u82" id="XQM-ln-PHz"/>
+                <outlet property="mainView" destination="6Gk-4x-41a" id="xFQ-eT-Q97"/>
+                <outlet property="typeTXT" destination="Svq-tu-oCR" id="pPW-2P-vA9"/>
+            </connections>
+            <point key="canvasLocation" x="205.79710144927537" y="108.48214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="captions.bubble.fill" catalog="system" width="128" height="110"/>
+    </resources>
+</document>

@@ -15,6 +15,17 @@
 		846956322A9B2A3E001A8BCC /* WelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846956312A9B2A3E001A8BCC /* WelcomeModel.swift */; };
 		846956342A9B2A48001A8BCC /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846956332A9B2A48001A8BCC /* Welcome.storyboard */; };
 		848587FA2A950F99006DE950 /* ViewControllerGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848587F92A950F99006DE950 /* ViewControllerGenerate.swift */; };
+		84AB26482A9B5CA1005EAF9A /* SelectUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB26412A9B5CA1005EAF9A /* SelectUnit.swift */; };
+		84AB26492A9B5CA1005EAF9A /* SelectUnit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AB26422A9B5CA1005EAF9A /* SelectUnit.xib */; };
+		84AB264A2A9B5CA1005EAF9A /* selectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB26442A9B5CA1005EAF9A /* selectType.swift */; };
+		84AB264B2A9B5CA1005EAF9A /* TypeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AB26452A9B5CA1005EAF9A /* TypeVC.xib */; };
+		84AB264C2A9B5CA1005EAF9A /* TypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB26462A9B5CA1005EAF9A /* TypeVC.swift */; };
+		84AB264D2A9B5CA1005EAF9A /* selectType.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AB26472A9B5CA1005EAF9A /* selectType.xib */; };
+		84AB264F2A9B5E17005EAF9A /* WelcomeEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB264E2A9B5E17005EAF9A /* WelcomeEnd.swift */; };
+		84CE96A12A9BD38A001507D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CE96A02A9BD38A001507D0 /* GoogleService-Info.plist */; };
+		84CE96A42A9BD4A1001507D0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 84CE96A32A9BD4A1001507D0 /* FirebaseAnalytics */; };
+		84CE96A62A9BD4A1001507D0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 84CE96A52A9BD4A1001507D0 /* FirebaseAnalyticsOnDeviceConversion */; };
+		84CE96A82A9BD4A1001507D0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 84CE96A72A9BD4A1001507D0 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		84D3C2782A90BBCB00E762A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C2772A90BBCB00E762A6 /* AppDelegate.swift */; };
 		84D3C27C2A90BBCB00E762A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C27B2A90BBCB00E762A6 /* ViewController.swift */; };
 		84D3C27F2A90BBCB00E762A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C27D2A90BBCB00E762A6 /* Main.storyboard */; };
@@ -61,6 +72,14 @@
 		846956312A9B2A3E001A8BCC /* WelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModel.swift; sourceTree = "<group>"; };
 		846956332A9B2A48001A8BCC /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		848587F92A950F99006DE950 /* ViewControllerGenerate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerGenerate.swift; sourceTree = "<group>"; };
+		84AB26412A9B5CA1005EAF9A /* SelectUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUnit.swift; sourceTree = "<group>"; };
+		84AB26422A9B5CA1005EAF9A /* SelectUnit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectUnit.xib; sourceTree = "<group>"; };
+		84AB26442A9B5CA1005EAF9A /* selectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = selectType.swift; sourceTree = "<group>"; };
+		84AB26452A9B5CA1005EAF9A /* TypeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TypeVC.xib; sourceTree = "<group>"; };
+		84AB26462A9B5CA1005EAF9A /* TypeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeVC.swift; sourceTree = "<group>"; };
+		84AB26472A9B5CA1005EAF9A /* selectType.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = selectType.xib; sourceTree = "<group>"; };
+		84AB264E2A9B5E17005EAF9A /* WelcomeEnd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeEnd.swift; sourceTree = "<group>"; };
+		84CE96A02A9BD38A001507D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84D3C2742A90BBCB00E762A6 /* AI Chat Bot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Chat Bot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D3C2772A90BBCB00E762A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84D3C27B2A90BBCB00E762A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +123,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8469562D2A9A0668001A8BCC /* StoreKit.framework in Frameworks */,
+				84CE96A82A9BD4A1001507D0 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				84DFC6EB2A93B65200142263 /* RevenueCat in Frameworks */,
+				84CE96A62A9BD4A1001507D0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				84CE96A42A9BD4A1001507D0 /* FirebaseAnalytics in Frameworks */,
 				84D3C28D2A90CB0600E762A6 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,10 +145,34 @@
 		846956302A9B2A1F001A8BCC /* WelcomePages */ = {
 			isa = PBXGroup;
 			children = (
+				84CE96A02A9BD38A001507D0 /* GoogleService-Info.plist */,
 				846956312A9B2A3E001A8BCC /* WelcomeModel.swift */,
+				84AB26432A9B5CA1005EAF9A /* SelectType */,
+				84AB26402A9B5CA1005EAF9A /* SelectUnit */,
 				846956332A9B2A48001A8BCC /* Welcome.storyboard */,
+				84AB264E2A9B5E17005EAF9A /* WelcomeEnd.swift */,
 			);
 			path = WelcomePages;
+			sourceTree = "<group>";
+		};
+		84AB26402A9B5CA1005EAF9A /* SelectUnit */ = {
+			isa = PBXGroup;
+			children = (
+				84AB26412A9B5CA1005EAF9A /* SelectUnit.swift */,
+				84AB26422A9B5CA1005EAF9A /* SelectUnit.xib */,
+			);
+			path = SelectUnit;
+			sourceTree = "<group>";
+		};
+		84AB26432A9B5CA1005EAF9A /* SelectType */ = {
+			isa = PBXGroup;
+			children = (
+				84AB26442A9B5CA1005EAF9A /* selectType.swift */,
+				84AB26452A9B5CA1005EAF9A /* TypeVC.xib */,
+				84AB26462A9B5CA1005EAF9A /* TypeVC.swift */,
+				84AB26472A9B5CA1005EAF9A /* selectType.xib */,
+			);
+			path = SelectType;
 			sourceTree = "<group>";
 		};
 		84D3C26B2A90BBCB00E762A6 = {
@@ -244,6 +290,9 @@
 			packageProductDependencies = (
 				84D3C28C2A90CB0600E762A6 /* IQKeyboardManagerSwift */,
 				84DFC6EA2A93B65200142263 /* RevenueCat */,
+				84CE96A32A9BD4A1001507D0 /* FirebaseAnalytics */,
+				84CE96A52A9BD4A1001507D0 /* FirebaseAnalyticsOnDeviceConversion */,
+				84CE96A72A9BD4A1001507D0 /* FirebaseAnalyticsWithoutAdIdSupport */,
 			);
 			productName = "AI Chat Bot";
 			productReference = 84D3C2742A90BBCB00E762A6 /* AI Chat Bot.app */;
@@ -276,6 +325,7 @@
 			packageReferences = (
 				84D3C28B2A90CB0600E762A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				84DFC6E92A93B65200142263 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+				84CE96A22A9BD4A1001507D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 84D3C2752A90BBCB00E762A6 /* Products */;
 			projectDirPath = "";
@@ -311,14 +361,18 @@
 				84D3C2C22A91F7E200E762A6 /* README.txt in Resources */,
 				84D3C2BF2A91F7E200E762A6 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				84D3C2B42A91F7E200E762A6 /* Montserrat-ExtraLight.ttf in Resources */,
+				84AB264B2A9B5CA1005EAF9A /* TypeVC.xib in Resources */,
 				84D3C2B02A91F7E200E762A6 /* Montserrat-Medium.ttf in Resources */,
 				84D3C2BC2A91F7E200E762A6 /* Montserrat-Black.ttf in Resources */,
 				84D3C2842A90BBCC00E762A6 /* LaunchScreen.storyboard in Resources */,
 				84D3C2812A90BBCC00E762A6 /* Assets.xcassets in Resources */,
+				84CE96A12A9BD38A001507D0 /* GoogleService-Info.plist in Resources */,
 				84D3C2B52A91F7E200E762A6 /* Montserrat-Thin.ttf in Resources */,
 				84D3C2BA2A91F7E200E762A6 /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				84D3C2B92A91F7E200E762A6 /* Montserrat-SemiBold.ttf in Resources */,
 				84D3C27F2A90BBCB00E762A6 /* Main.storyboard in Resources */,
+				84AB264D2A9B5CA1005EAF9A /* selectType.xib in Resources */,
+				84AB26492A9B5CA1005EAF9A /* SelectUnit.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +384,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D3C2902A90D5BC00E762A6 /* QuestionCell.swift in Sources */,
+				84AB264A2A9B5CA1005EAF9A /* selectType.swift in Sources */,
 				848587FA2A950F99006DE950 /* ViewControllerGenerate.swift in Sources */,
+				84AB26482A9B5CA1005EAF9A /* SelectUnit.swift in Sources */,
 				84D3C2C62A92405100E762A6 /* InAppPurchases.swift in Sources */,
 				84D3C27C2A90BBCB00E762A6 /* ViewController.swift in Sources */,
 				8469562A2A9921D1001A8BCC /* HistoryCell.swift in Sources */,
@@ -340,6 +396,8 @@
 				8469562F2A9A27A8001A8BCC /* SettingVC.swift in Sources */,
 				84D3C2942A911EEF00E762A6 /* API.swift in Sources */,
 				846956282A99217A001A8BCC /* HistoryVC.swift in Sources */,
+				84AB264C2A9B5CA1005EAF9A /* TypeVC.swift in Sources */,
+				84AB264F2A9B5E17005EAF9A /* WelcomeEnd.swift in Sources */,
 				846956262A98C068001A8BCC /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +624,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		84CE96A22A9BD4A1001507D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		84D3C28B2A90CB0600E762A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
@@ -585,6 +651,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		84CE96A32A9BD4A1001507D0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84CE96A22A9BD4A1001507D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		84CE96A52A9BD4A1001507D0 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84CE96A22A9BD4A1001507D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		84CE96A72A9BD4A1001507D0 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84CE96A22A9BD4A1001507D0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
 		84D3C28C2A90CB0600E762A6 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 84D3C28B2A90CB0600E762A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;

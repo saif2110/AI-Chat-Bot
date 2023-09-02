@@ -41,6 +41,11 @@ class SettingVC: UIViewController {
         switch sender.tag {
         case 0:
             
+            let vc = SelectUnit()
+            vc.cameFromSetting = true
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
+            
             break
         case 1:
             let email = "feedback@apps15.com"
