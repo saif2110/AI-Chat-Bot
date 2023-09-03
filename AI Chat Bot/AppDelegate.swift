@@ -10,6 +10,7 @@ import AVFoundation
 import IQKeyboardManagerSwift
 import RevenueCat
 import Firebase
+import AppTrackingTransparency
 
 
 let backGroundColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.1176470588, alpha: 1)
@@ -53,6 +54,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 Manager.isPro = false
             }
             
+        }
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                switch status {
+                    case .authorized:
+                        print("enable tracking")
+                    case .denied:
+                        print("disable tracking")
+                    default:
+                        print("disable tracking")
+                }
+            }
         }
     }
     

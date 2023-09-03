@@ -45,11 +45,11 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcE-fH-hv9">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="775"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcE-fH-hv9">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <subviews>
                         <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h08-Ae-Nsa">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="726.66666666666663"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="765.66666666666663"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getPRo" translatesAutoresizingMaskIntoConstraints="NO" id="jiW-vd-YSY">
                                     <rect key="frame" x="25" y="18" width="343" height="70"/>
@@ -336,6 +336,59 @@
                                         <action selector="skip:" destination="-1" eventType="touchUpInside" id="5Ki-QM-6JO"/>
                                     </connections>
                                 </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICX-w4-d6M" userLabel="Spacer">
+                                    <rect key="frame" x="25" y="718.66666666666663" width="343" height="14"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="PBr-CF-4bl"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXc-Ml-eSs">
+                                    <rect key="frame" x="25" y="732.66666666666663" width="343" height="25"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqk-Vc-l8d">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.66666666666667" height="25"/>
+                                            <fontDescription key="fontDescription" name="MontserratRoman-Regular" family="Montserrat" pointSize="10"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Privacy Policy">
+                                                <color key="titleColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="privacy:" destination="-1" eventType="touchUpInside" id="tTc-qV-w5b"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0U-vR-86O">
+                                            <rect key="frame" x="127.66666666666666" y="0.0" width="88" height="25"/>
+                                            <fontDescription key="fontDescription" name="MontserratRoman-Regular" family="Montserrat" pointSize="10"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Restore Purchase">
+                                                <color key="titleColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="restore:" destination="-1" eventType="touchUpInside" id="2ad-zr-6dc"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpY-MN-vvA">
+                                            <rect key="frame" x="215.66666666666666" y="0.0" width="127.33333333333334" height="25"/>
+                                            <fontDescription key="fontDescription" name="MontserratRoman-Regular" family="Montserrat" pointSize="10"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Terms of Use">
+                                                <color key="titleColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="toc:" destination="-1" eventType="touchUpInside" id="DBm-cB-WIR"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Hqk-Vc-l8d" firstAttribute="centerY" secondItem="eXc-Ml-eSs" secondAttribute="centerY" id="Bop-rV-MGg"/>
+                                        <constraint firstItem="gpY-MN-vvA" firstAttribute="centerY" secondItem="eXc-Ml-eSs" secondAttribute="centerY" id="SQe-DE-1NT"/>
+                                        <constraint firstItem="Hqk-Vc-l8d" firstAttribute="leading" secondItem="eXc-Ml-eSs" secondAttribute="leading" id="Y1E-96-arb"/>
+                                        <constraint firstAttribute="trailing" secondItem="gpY-MN-vvA" secondAttribute="trailing" id="hNa-yY-BAO"/>
+                                        <constraint firstItem="Q0U-vR-86O" firstAttribute="centerX" secondItem="eXc-Ml-eSs" secondAttribute="centerX" id="sO3-fC-Jbl"/>
+                                        <constraint firstItem="Q0U-vR-86O" firstAttribute="centerY" secondItem="eXc-Ml-eSs" secondAttribute="centerY" id="zlA-5Z-aaT"/>
+                                    </constraints>
+                                </stackView>
                             </subviews>
                             <viewLayoutGuide key="safeArea" id="SSd-b5-oQY"/>
                             <directionalEdgeInsets key="directionalLayoutMargins" top="18" leading="25" bottom="8" trailing="25"/>
@@ -347,44 +400,10 @@
                         <constraint firstItem="h08-Ae-Nsa" firstAttribute="bottom" secondItem="83l-80-Skd" secondAttribute="bottom" id="EtF-A5-eYF"/>
                         <constraint firstItem="h08-Ae-Nsa" firstAttribute="trailing" secondItem="83l-80-Skd" secondAttribute="trailing" id="Qmc-iY-gCq"/>
                         <constraint firstItem="h08-Ae-Nsa" firstAttribute="leading" secondItem="83l-80-Skd" secondAttribute="leading" id="n58-0w-Yom"/>
-                        <constraint firstAttribute="height" constant="775" id="q2x-A7-hAC"/>
                     </constraints>
                     <viewLayoutGuide key="contentLayoutGuide" id="83l-80-Skd"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="fg6-is-fTP"/>
                 </scrollView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hqk-Vc-l8d">
-                    <rect key="frame" x="15" y="785" width="69" height="25"/>
-                    <fontDescription key="fontDescription" name="MontserratRoman-Regular" family="Montserrat" pointSize="10"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Privacy Policy">
-                        <color key="titleColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="privacy:" destination="-1" eventType="touchUpInside" id="tTc-qV-w5b"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0U-vR-86O">
-                    <rect key="frame" x="152.66666666666666" y="785" width="88" height="25"/>
-                    <fontDescription key="fontDescription" name="MontserratRoman-Regular" family="Montserrat" pointSize="10"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Restore Purchase">
-                        <color key="titleColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="restore:" destination="-1" eventType="touchUpInside" id="2ad-zr-6dc"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpY-MN-vvA">
-                    <rect key="frame" x="303" y="785" width="65" height="25"/>
-                    <fontDescription key="fontDescription" name="MontserratRoman-Regular" family="Montserrat" pointSize="10"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" title="Terms of Use">
-                        <color key="titleColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="toc:" destination="-1" eventType="touchUpInside" id="DBm-cB-WIR"/>
-                    </connections>
-                </button>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBs-iB-wby">
                     <rect key="frame" x="343" y="59" width="40" height="40"/>
                     <constraints>
@@ -400,20 +419,14 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="Q0U-vR-86O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5DX-Tq-RE7"/>
-                <constraint firstItem="Hqk-Vc-l8d" firstAttribute="top" secondItem="dcE-fH-hv9" secondAttribute="bottom" constant="10" id="6IU-wn-8Gw"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gpY-MN-vvA" secondAttribute="trailing" constant="25" id="90b-Wr-pxS"/>
                 <constraint firstItem="gBs-iB-wby" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ogc-0N-p50"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gBs-iB-wby" secondAttribute="trailing" constant="10" id="Png-9Y-U0m"/>
                 <constraint firstItem="dcE-fH-hv9" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="TEe-Xb-7og"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Hqk-Vc-l8d" secondAttribute="bottom" constant="8" id="bVt-Pc-b36"/>
-                <constraint firstItem="gpY-MN-vvA" firstAttribute="centerY" secondItem="Hqk-Vc-l8d" secondAttribute="centerY" id="mEM-42-xrI"/>
                 <constraint firstItem="dcE-fH-hv9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tQf-TQ-6Dw"/>
-                <constraint firstItem="Q0U-vR-86O" firstAttribute="centerY" secondItem="Hqk-Vc-l8d" secondAttribute="centerY" id="y1n-3T-mn5"/>
                 <constraint firstItem="dcE-fH-hv9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zRM-Mw-bwN"/>
-                <constraint firstItem="Hqk-Vc-l8d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="zqh-QL-VQc"/>
+                <constraint firstAttribute="bottom" secondItem="dcE-fH-hv9" secondAttribute="bottom" id="zdy-xz-Jzh"/>
             </constraints>
-            <point key="canvasLocation" x="48.799999999999997" y="-14.77832512315271"/>
+            <point key="canvasLocation" x="48.091603053435115" y="-14.788732394366198"/>
         </view>
     </objects>
     <resources>

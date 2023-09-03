@@ -4,5 +4,7 @@
 <dict>
 	<key>UIUserInterfaceStyle</key>
 	<string>Dark</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>App would like to access IDFA for tracking &amp; Analytcs purpose</string>
 </dict>
 </plist>

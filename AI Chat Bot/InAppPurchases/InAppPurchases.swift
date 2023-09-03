@@ -38,7 +38,7 @@ class InAppPurchases: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        self.scrollView.contentInsetAdjustmentBehavior = .never
+        //self.scrollView.contentInsetAdjustmentBehavior = .never
         
         weeklyButton.borderColorV = borderColor
         yearlyButton.borderColorV = borderColor
@@ -115,7 +115,7 @@ class InAppPurchases: UIViewController {
         self.continueButton.isUserInteractionEnabled = false
         
         if selectedPackage != nil {
-            startIndicator(selfo: self, UIView: self.view)
+            startIndicator(self: self)
             Purchases.shared.purchase(package: selectedPackage!) { (transaction, purchaserInfo, error, userCancelled) in
                 self.skipButton.isHidden = false
                 self.continueButton.isUserInteractionEnabled = true
@@ -127,7 +127,7 @@ class InAppPurchases: UIViewController {
                     
                 }else{
                     //self.backButtonoutlet.isHidden = false
-                    self.stopIndicator()
+                    stopIndicator()
                     
                 }
                 
@@ -172,8 +172,31 @@ class InAppPurchases: UIViewController {
     }
     
     @IBAction func restore(_ sender: Any) {
-        
-        
+        startIndicator(self: self)
+        Purchases.shared.restorePurchases { (purchaserInfo, error) in
+          stopIndicator()
+          if !(purchaserInfo?.entitlements.active.isEmpty ?? true) {
+              
+              self.PerchesedComplte()
+          
+          }else{
+              
+              let alert = UIAlertController(title: "Alert!", message: "No previous transactions found!", preferredStyle: .alert)
+              alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                  switch action.style{
+                  case .default:
+                      print("")
+                  case .cancel:
+                      print("")
+                  case .destructive:
+                      print("")
+                  @unknown default:
+                      fatalError()
+                  }}))
+              
+              self.present(alert, animated: true)
+          }
+      }
     }
     
     @IBAction func toc(_ sender: Any) {
@@ -181,21 +204,6 @@ class InAppPurchases: UIViewController {
         let vc = SFSafariViewController(url: url!)
         present(vc, animated: true, completion: nil)
         
-    }
-    
-    var indicator = UIActivityIndicatorView()
-    
-    func startIndicator(selfo:UIViewController,UIView:UIView) {
-        indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
-        indicator.color = borderColor
-        UIView.addSubview(indicator)
-        indicator.center = CGPoint(x: UIView.frame.size.width / 2.0, y: (UIView.frame.size.height) / 2.0)
-        indicator.startAnimating()
-    }
-    
-    
-    func stopIndicator() {
-        indicator.stopAnimating()
     }
     
     @IBAction func skip(_ sender: Any) {
@@ -284,4 +292,20 @@ struct Manager {
         }
     }
     
+}
+
+
+var indicator = UIActivityIndicatorView()
+
+func startIndicator(self:UIViewController) {
+    indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
+    indicator.color = tintappColor
+    self.view.addSubview(indicator)
+    indicator.center = CGPoint(x: self.view.frame.size.width / 2.0, y: (self.view.frame.size.height) / 2.0)
+    indicator.startAnimating()
+}
+
+
+func stopIndicator() {
+    indicator.stopAnimating()
 }

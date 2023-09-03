@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8404AFAA2AA464600064800C /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404AFA92AA4645F0064800C /* AppTrackingTransparency.framework */; };
 		846956262A98C068001A8BCC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846956252A98C068001A8BCC /* Data.swift */; };
 		846956282A99217A001A8BCC /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846956272A99217A001A8BCC /* HistoryVC.swift */; };
 		8469562A2A9921D1001A8BCC /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846956292A9921D1001A8BCC /* HistoryCell.swift */; };
@@ -64,6 +65,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8404AFA92AA4645F0064800C /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		846956252A98C068001A8BCC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		846956272A99217A001A8BCC /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		846956292A9921D1001A8BCC /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				84DFC6EB2A93B65200142263 /* RevenueCat in Frameworks */,
 				84CE96A62A9BD4A1001507D0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				84CE96A42A9BD4A1001507D0 /* FirebaseAnalytics in Frameworks */,
+				8404AFAA2AA464600064800C /* AppTrackingTransparency.framework in Frameworks */,
 				84D3C28D2A90CB0600E762A6 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +140,7 @@
 		8469562B2A9A0668001A8BCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8404AFA92AA4645F0064800C /* AppTrackingTransparency.framework */,
 				8469562C2A9A0668001A8BCC /* StoreKit.framework */,
 			);
 			name = Frameworks;
@@ -544,7 +548,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AI Chat Bot/Info.plist";
@@ -575,7 +579,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AI Chat Bot/Info.plist";
