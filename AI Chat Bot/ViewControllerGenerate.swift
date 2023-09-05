@@ -157,6 +157,8 @@ class ViewControllerGenerate: UIViewController {
 
         sender.backgroundColor = selectedColor
         sender.setTitleColor(UIColor.white, for: .normal)
+        
+        allQuestionAnswers.removeAll()
        
     }
     
@@ -180,6 +182,7 @@ class ViewControllerGenerate: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.scrolltoBottom()
         }
+        playSound(type: .send)
         
         if Manager.queryHitValue%2 == 0 {
             openInappPurchase(context: self)
@@ -235,6 +238,7 @@ extension ViewControllerGenerate {
                 self.tableView.reloadData()
                 self.queryTextFiled.isUserInteractionEnabled = true
                 self.scrolltoBottom()
+                playSound(type: .receive)
             }
             
             

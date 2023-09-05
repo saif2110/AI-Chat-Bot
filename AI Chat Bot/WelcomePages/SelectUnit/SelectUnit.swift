@@ -139,10 +139,6 @@ class SelectUnit: UIViewController,UICollectionViewDelegate,UICollectionViewData
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
-        if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
-          SKStoreReviewController.requestReview(in: scene)
-        }
-        
     }
     
 }

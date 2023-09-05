@@ -8,6 +8,7 @@
 import UIKit
 import RevenueCat
 import SafariServices
+import StoreKit
 
 enum IPA:String {
     case Weekly = "ChatBotWeekly"
@@ -37,7 +38,7 @@ class InAppPurchases: UIViewController {
     @IBOutlet weak var weeklyButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         //self.scrollView.contentInsetAdjustmentBehavior = .never
         
         weeklyButton.borderColorV = borderColor
@@ -46,7 +47,7 @@ class InAppPurchases: UIViewController {
         revenuCat()
         
         self.skipButton.alpha = 0.0
-        self.skipButton.isHidden = false
+        self.skipButton.isHidden = Apps15init.shared.HSB
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             UIView.animate(withDuration: 1.5) {
                 self.skipButton.alpha = 1.0
@@ -54,6 +55,12 @@ class InAppPurchases: UIViewController {
         }
         
         
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
+          SKStoreReviewController.requestReview(in: scene)
+        }
     }
     
     

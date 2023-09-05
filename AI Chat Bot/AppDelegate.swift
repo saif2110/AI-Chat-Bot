@@ -31,16 +31,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enableAutoToolbar = false
         Purchases.logLevel = .error
         Purchases.configure(withAPIKey: "appl_gXKAzHloNrDTyZHqrdGjtUISffQ")
-
+        
         
         Manager.numberofTimesAppOpen = Manager.numberofTimesAppOpen + 1
         
         
-         //Manager.isPro = false
+        //Manager.isPro = false
         FirebaseApp.configure()
         isSubsActive()
+        Apps15init.shared.start(id: "apps15.AI-Chat-Bot")
         Thread.sleep(forTimeInterval: 1.5)
-        
         return true
     }
     
@@ -61,12 +61,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization { status in
                 switch status {
-                    case .authorized:
-                        print("enable tracking")
-                    case .denied:
-                        print("disable tracking")
-                    default:
-                        print("disable tracking")
+                case .authorized:
+                    break
+                case .denied:
+                    break
+                default:
+                    break
                 }
             }
         }
