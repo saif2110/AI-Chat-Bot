@@ -11,6 +11,7 @@ import IQKeyboardManagerSwift
 import RevenueCat
 import Firebase
 import AppTrackingTransparency
+import FacebookCore
 
 
 let backGroundColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.1176470588, alpha: 1)
@@ -40,6 +41,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         isSubsActive()
         Apps15init.shared.start(id: "apps15.AI-Chat-Bot")
+        
+        ApplicationDelegate.shared.application(
+                   application,
+                   didFinishLaunchingWithOptions: launchOptions
+               )
+        
+        Settings.shared.isAdvertiserTrackingEnabled = true
+        
+        
         Thread.sleep(forTimeInterval: 1.5)
         return true
     }

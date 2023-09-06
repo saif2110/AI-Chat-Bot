@@ -31,6 +31,9 @@
 		84AB264D2A9B5CA1005EAF9A /* selectType.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AB26472A9B5CA1005EAF9A /* selectType.xib */; };
 		84AB264F2A9B5E17005EAF9A /* WelcomeEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB264E2A9B5E17005EAF9A /* WelcomeEnd.swift */; };
 		84B109952AA78C360010CA5E /* Apps15init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B109942AA78C360010CA5E /* Apps15init.swift */; };
+		84B8CA192AA88101008B7128 /* FacebookAEM in Frameworks */ = {isa = PBXBuildFile; productRef = 84B8CA182AA88101008B7128 /* FacebookAEM */; };
+		84B8CA1B2AA88101008B7128 /* FacebookBasics in Frameworks */ = {isa = PBXBuildFile; productRef = 84B8CA1A2AA88101008B7128 /* FacebookBasics */; };
+		84B8CA1D2AA88101008B7128 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84B8CA1C2AA88101008B7128 /* FacebookCore */; };
 		84CE96A12A9BD38A001507D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CE96A02A9BD38A001507D0 /* GoogleService-Info.plist */; };
 		84D3C2782A90BBCB00E762A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C2772A90BBCB00E762A6 /* AppDelegate.swift */; };
 		84D3C27C2A90BBCB00E762A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C27B2A90BBCB00E762A6 /* ViewController.swift */; };
@@ -133,12 +136,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B8CA192AA88101008B7128 /* FacebookAEM in Frameworks */,
 				8469562D2A9A0668001A8BCC /* StoreKit.framework in Frameworks */,
 				8431CB552AA7088E0046C31A /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				84DFC6EB2A93B65200142263 /* RevenueCat in Frameworks */,
+				84B8CA1D2AA88101008B7128 /* FacebookCore in Frameworks */,
 				8404AFAA2AA464600064800C /* AppTrackingTransparency.framework in Frameworks */,
 				8431CB572AA7088E0046C31A /* FirebaseAnalyticsSwift in Frameworks */,
 				8431CB532AA7088E0046C31A /* FirebaseAnalytics in Frameworks */,
+				84B8CA1B2AA88101008B7128 /* FacebookBasics in Frameworks */,
 				84D3C28D2A90CB0600E762A6 /* IQKeyboardManagerSwift in Frameworks */,
 				8431CB592AA7088E0046C31A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
@@ -320,6 +326,9 @@
 				8431CB542AA7088E0046C31A /* FirebaseAnalyticsOnDeviceConversion */,
 				8431CB562AA7088E0046C31A /* FirebaseAnalyticsSwift */,
 				8431CB582AA7088E0046C31A /* FirebaseAnalyticsWithoutAdIdSupport */,
+				84B8CA182AA88101008B7128 /* FacebookAEM */,
+				84B8CA1A2AA88101008B7128 /* FacebookBasics */,
+				84B8CA1C2AA88101008B7128 /* FacebookCore */,
 			);
 			productName = "AI Chat Bot";
 			productReference = 84D3C2742A90BBCB00E762A6 /* AI Chat Bot.app */;
@@ -353,6 +362,7 @@
 				84D3C28B2A90CB0600E762A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 				84DFC6E92A93B65200142263 /* XCRemoteSwiftPackageReference "purchases-ios" */,
 				8431CB512AA7088E0046C31A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				84B8CA172AA88101008B7128 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 84D3C2752A90BBCB00E762A6 /* Products */;
 			projectDirPath = "";
@@ -589,6 +599,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "apps15.AI-Chat-Bot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -620,6 +631,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "apps15.AI-Chat-Bot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -663,6 +675,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		84B8CA172AA88101008B7128 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 16.1.3;
+			};
+		};
 		84D3C28B2A90CB0600E762A6 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
@@ -701,6 +721,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8431CB512AA7088E0046C31A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		84B8CA182AA88101008B7128 /* FacebookAEM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84B8CA172AA88101008B7128 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookAEM;
+		};
+		84B8CA1A2AA88101008B7128 /* FacebookBasics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84B8CA172AA88101008B7128 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookBasics;
+		};
+		84B8CA1C2AA88101008B7128 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84B8CA172AA88101008B7128 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
 		};
 		84D3C28C2A90CB0600E762A6 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
