@@ -23,6 +23,10 @@
     <key>FacebookDisplayName</key>
     <string>AI Chat Bot</string>
     
+    <key>FacebookAutoLogAppEventsEnabled</key>
+    <true/>
+    <key>FacebookAdvertiserIDCollectionEnabled</key>
+    <true/>
     
 </dict>
 </plist>

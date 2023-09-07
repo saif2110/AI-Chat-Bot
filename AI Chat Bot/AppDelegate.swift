@@ -12,6 +12,8 @@ import RevenueCat
 import Firebase
 import AppTrackingTransparency
 import FacebookCore
+import FacebookAEM
+import SwiftUI
 
 
 let backGroundColor = #colorLiteral(red: 0.1176470588, green: 0.1176470588, blue: 0.1176470588, alpha: 1)
@@ -42,12 +44,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         isSubsActive()
         Apps15init.shared.start(id: "apps15.AI-Chat-Bot")
         
-        ApplicationDelegate.shared.application(
-                   application,
-                   didFinishLaunchingWithOptions: launchOptions
-               )
-        
-        Settings.shared.isAdvertiserTrackingEnabled = true
+        ApplicationDelegate.shared.application(application,
+           didFinishLaunchingWithOptions: launchOptions)
+        Settings.shared.isAutoLogAppEventsEnabled = false
+        Settings.shared.isAdvertiserIDCollectionEnabled = false
+        checkATTStatus()
         
         
         Thread.sleep(forTimeInterval: 1.5)
@@ -67,9 +68,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func checkATTStatus() {
+        let isConsented = ATTrackingManager.trackingAuthorizationStatus == .authorized
+        Settings.shared.isAutoLogAppEventsEnabled = isConsented
+        //Settings.shared.setAdvertiserTrackingEnabled(isConsented)
+        Settings.shared.isAdvertiserIDCollectionEnabled = isConsented
+        }
+    
     func applicationDidBecomeActive(_ application: UIApplication) {
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization { status in
+                
+                let isConsented = status == .authorized
+                Settings.shared.isAutoLogAppEventsEnabled = isConsented
+                Settings.shared.isAdvertiserIDCollectionEnabled = isConsented
                 switch status {
                 case .authorized:
                     break
