@@ -13,6 +13,7 @@ import StoreKit
 enum IPA:String {
     case Weekly = "ChatBotWeekly"
     case Yearly = "ChatBotYearly"
+    case Monthly = "ChatBotMonthly"
 }
 
 var isProTrigger:(() -> ())?
@@ -69,7 +70,7 @@ class InAppPurchases: UIViewController {
             
             if let offerings = offerings {
                 
-                guard let package = offerings[IPA.Weekly.rawValue]?.availablePackages.first else {
+                guard let package = offerings[IPA.Monthly.rawValue]?.availablePackages.first else {
                     return
                 }
                 
@@ -82,13 +83,13 @@ class InAppPurchases: UIViewController {
                 self.selectedPackage = package2
                 
                 
-                let weekPrice = offerings[IPA.Weekly.rawValue]?.weekly?.localizedPriceString
+                let weekPrice = offerings[IPA.Monthly.rawValue]?.monthly?.localizedPriceString
                 
                 
                 let YearPrice = offerings[IPA.Yearly.rawValue]?.annual?.localizedPriceString
                 
                 
-                self.weekTitle.text = (weekPrice ?? "") + " / Week"
+                self.weekTitle.text = (weekPrice ?? "") + " / Month"
                 self.yearlyTitle.text = (YearPrice ?? "") + " / Year"
                 
                 
