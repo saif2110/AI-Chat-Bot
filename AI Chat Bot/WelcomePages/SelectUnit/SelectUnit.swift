@@ -137,12 +137,7 @@ class SelectUnit: UIViewController,UICollectionViewDelegate,UICollectionViewData
           SKStoreReviewController.requestReview(in: scene)
         }
         
-        if !Manager.isPro {
-            let vc = InAppPurchases()
-            vc.modalPresentationStyle = .fullScreen
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-        
+        openInappPurchasewithPush(context: self)
         
     }
     

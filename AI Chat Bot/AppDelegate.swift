@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launchhn hn.
+        Apps15init.shared.start(id: "apps15.AI-Chat-Bot")
+        
         IQKeyboardManager.shared.keyboardDistanceFromTextField = -28
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.enableAutoToolbar = false
@@ -42,7 +44,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Manager.isPro = false
         FirebaseApp.configure()
         isSubsActive()
-        Apps15init.shared.start(id: "apps15.AI-Chat-Bot")
         
         ApplicationDelegate.shared.application(application,
            didFinishLaunchingWithOptions: launchOptions)
@@ -156,10 +157,19 @@ func texttoSpeech(text:String){
 }
 
 
+func openInappPurchasewithPush(context:UIViewController){
+    if !Manager.isPro {
+        let vc = InAppViewController()
+        vc.modalPresentationStyle = .fullScreen
+        context.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+}
+
 
 func openInappPurchase(context:UIViewController){
     if !Manager.isPro {
-        let vc = InAppPurchases()
+        let vc = InAppViewController()
         vc.modalPresentationStyle = .fullScreen
         context.present(vc, animated: true)
     }
