@@ -159,7 +159,7 @@ class InAppViewController: UIViewController {
     stopIndicator()
     
     Manager.isPro = true
-    
+    isProTrigger?()
       
       let alert = UIAlertController(title: "Congratulations !", message: "You are a pro member now. Enjoy seamless experience with all features unlock.", preferredStyle: .alert)
       alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
