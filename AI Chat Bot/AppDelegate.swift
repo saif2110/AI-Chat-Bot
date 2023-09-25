@@ -11,8 +11,6 @@ import IQKeyboardManagerSwift
 import RevenueCat
 import Firebase
 import AppTrackingTransparency
-import FacebookCore
-import FacebookAEM
 import SwiftUI
 
 
@@ -42,13 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //Manager.isPro = false
-        FirebaseApp.configure()
+       
         isSubsActive()
-        
-        ApplicationDelegate.shared.application(application,
-           didFinishLaunchingWithOptions: launchOptions)
-        Settings.shared.isAutoLogAppEventsEnabled = false
-        Settings.shared.isAdvertiserIDCollectionEnabled = false
+    
         checkATTStatus()
         
         
@@ -71,18 +65,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func checkATTStatus() {
         let isConsented = ATTrackingManager.trackingAuthorizationStatus == .authorized
-        Settings.shared.isAutoLogAppEventsEnabled = isConsented
-        //Settings.shared.setAdvertiserTrackingEnabled(isConsented)
-        Settings.shared.isAdvertiserIDCollectionEnabled = isConsented
         }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization { status in
-                
-                let isConsented = status == .authorized
-                Settings.shared.isAutoLogAppEventsEnabled = isConsented
-                Settings.shared.isAdvertiserIDCollectionEnabled = isConsented
                 switch status {
                 case .authorized:
                     break

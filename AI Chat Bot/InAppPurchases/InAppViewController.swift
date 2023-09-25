@@ -29,17 +29,6 @@ class InAppViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
       
-//      continueOutlet.isHidden = true
-//      
-//      DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//          UIView.transition(with: self.continueOutlet, duration: 0.4,
-//                            options: .transitionCrossDissolve,
-//                            animations: {
-//              self.continueOutlet.isHidden = false
-//          })
-//      }
-    
-    
       Purchases.shared.getOfferings { (offerings, error) in
       
       if let offerings = offerings {
@@ -51,12 +40,12 @@ class InAppViewController: UIViewController {
           self.package = package2
       
         
-        let priceone = offerings[IPA.Weekly.rawValue]?.weekly?.localizedPriceString
+        let priceone = offerings[IPA.Yearly.rawValue]?.annual?.localizedPriceString
         
 
         // self.priceLabel.text = "Three days free trial. After free trial, \(String(describing: priceone ?? "")) billed weekly auto renewable."
           
-          self.priceLabel.text = "Unlock the full potential of our app with a pro membership with all features at just \(String(describing: priceone ?? "")) billed weekly auto renewable."
+          self.priceLabel.text = "Unlock the full potential of our app with a pro membership with all features at just \(String(describing: priceone ?? "")) billed yearly auto renewable."
         
         
         stopIndicator()

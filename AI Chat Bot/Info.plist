@@ -6,27 +6,5 @@
 	<string>Dark</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>App would like to access IDFA for tracking &amp; Analytics purpose</string>
-    
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-      <key>CFBundleURLSchemes</key>
-      <array>
-        <string>fb709818701024090</string>
-      </array>
-      </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>709818701024090</string>
-    <key>FacebookClientToken</key>
-    <string>851bd325b0c2aaeeb4103bb9010af803</string>
-    <key>FacebookDisplayName</key>
-    <string>AI Chat Bot</string>
-    
-    <key>FacebookAutoLogAppEventsEnabled</key>
-    <true/>
-    <key>FacebookAdvertiserIDCollectionEnabled</key>
-    <true/>
-    
 </dict>
 </plist>

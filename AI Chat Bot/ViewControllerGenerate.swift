@@ -184,9 +184,9 @@ class ViewControllerGenerate: UIViewController {
         }
         playSound(type: .send)
         
-        if Manager.queryHitValue%2 == 0 {
-            openInappPurchase(context: self)
-        }
+//        if Manager.queryHitValue%2 == 0 {
+//            openInappPurchase(context: self)
+//        }
         
     }
     
