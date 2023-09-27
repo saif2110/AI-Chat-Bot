@@ -33,7 +33,7 @@ class InAppViewController: UIViewController {
       
       if let offerings = offerings {
         
-          guard let package2 = offerings[IPA.Weekly.rawValue]?.availablePackages.first else {
+          guard let package2 = offerings[IPA.Yearly.rawValue]?.availablePackages.first else {
           return
         }
         
