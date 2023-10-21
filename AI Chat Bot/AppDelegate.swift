@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         checkATTStatus()
         
         
-        Thread.sleep(forTimeInterval: 1.5)
+        Thread.sleep(forTimeInterval: 1.9)
         return true
     }
     
