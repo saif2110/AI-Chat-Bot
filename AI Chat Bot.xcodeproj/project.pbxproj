@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8404AFAA2AA464600064800C /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404AFA92AA4645F0064800C /* AppTrackingTransparency.framework */; };
+		8430CC432AE27FFD00D169B3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8430CC422AE27FFD00D169B3 /* icon.png */; };
 		8431CB432AA5D76E0046C31A /* SendSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8431CB412AA5D76D0046C31A /* SendSound.mp3 */; };
 		8431CB442AA5D76E0046C31A /* RecivingSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8431CB422AA5D76E0046C31A /* RecivingSound.mp3 */; };
 		8431CB462AA5D7970046C31A /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8431CB452AA5D7970046C31A /* PlaySound.swift */; };
@@ -68,11 +69,11 @@
 		84D3C2C62A92405100E762A6 /* InAppPurchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D3C2C42A92405100E762A6 /* InAppPurchases.swift */; };
 		84D3C2C72A92405100E762A6 /* InAppPurchases.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D3C2C52A92405100E762A6 /* InAppPurchases.xib */; };
 		84DFC6EB2A93B65200142263 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 84DFC6EA2A93B65200142263 /* RevenueCat */; };
-		84DFC6ED2A94AA5900142263 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84DFC6EC2A94AA5900142263 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8404AFA92AA4645F0064800C /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		8430CC422AE27FFD00D169B3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8431CB412AA5D76D0046C31A /* SendSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SendSound.mp3; sourceTree = "<group>"; };
 		8431CB422AA5D76E0046C31A /* RecivingSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RecivingSound.mp3; sourceTree = "<group>"; };
 		8431CB452AA5D7970046C31A /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
@@ -129,7 +130,6 @@
 		84D3C2AC2A91F7E200E762A6 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		84D3C2C42A92405100E762A6 /* InAppPurchases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchases.swift; sourceTree = "<group>"; };
 		84D3C2C52A92405100E762A6 /* InAppPurchases.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InAppPurchases.xib; sourceTree = "<group>"; };
-		84DFC6EC2A94AA5900142263 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,8 +234,8 @@
 				84D3C27B2A90BBCB00E762A6 /* ViewController.swift */,
 				84D3C27D2A90BBCB00E762A6 /* Main.storyboard */,
 				84D3C2802A90BBCC00E762A6 /* Assets.xcassets */,
+				8430CC422AE27FFD00D169B3 /* icon.png */,
 				84D3C2822A90BBCC00E762A6 /* LaunchScreen.storyboard */,
-				84DFC6EC2A94AA5900142263 /* icon.png */,
 				84D3C2852A90BBCC00E762A6 /* Info.plist */,
 				84D3C2932A911EEF00E762A6 /* API.swift */,
 				846956252A98C068001A8BCC /* Data.swift */,
@@ -375,8 +375,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D3C2B12A91F7E200E762A6 /* Montserrat-BoldItalic.ttf in Resources */,
+				8430CC432AE27FFD00D169B3 /* icon.png in Resources */,
 				84D3C2AE2A91F7E200E762A6 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
-				84DFC6ED2A94AA5900142263 /* icon.png in Resources */,
 				84D3C2B72A91F7E200E762A6 /* Montserrat-MediumItalic.ttf in Resources */,
 				8431CB432AA5D76E0046C31A /* SendSound.mp3 in Resources */,
 				84D3C2C72A92405100E762A6 /* InAppPurchases.xib in Resources */,
@@ -583,10 +583,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AI Chat Bot/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ai+ Bot";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -596,7 +597,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "apps15.AI-Chat-Bot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -615,10 +616,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AI Chat Bot/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ai+ Bot";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -628,7 +630,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.6;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "apps15.AI-Chat-Bot";
 				PRODUCT_NAME = "$(TARGET_NAME)";

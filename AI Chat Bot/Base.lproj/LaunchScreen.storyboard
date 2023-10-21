@@ -22,13 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="t8C-v1-B0B">
-                                <rect key="frame" x="20" y="379" width="353" height="70"/>
+                                <rect key="frame" x="20" y="385" width="353" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="KqH-4g-0e8"/>
                                 </constraints>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© Chat Bot AI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcv-wP-CEq">
-                                <rect key="frame" x="144.33333333333334" y="469" width="104.66666666666666" height="18.333333333333314"/>
+                                <rect key="frame" x="144.33333333333334" y="463" width="104.66666666666666" height="18.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -38,9 +38,9 @@
                         <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Gcv-wP-CEq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7fE-22-p7f"/>
-                            <constraint firstItem="Gcv-wP-CEq" firstAttribute="top" secondItem="t8C-v1-B0B" secondAttribute="bottom" constant="20" id="OXR-b2-Hqd"/>
+                            <constraint firstItem="Gcv-wP-CEq" firstAttribute="top" secondItem="t8C-v1-B0B" secondAttribute="bottom" constant="8" id="OXR-b2-Hqd"/>
                             <constraint firstAttribute="trailing" secondItem="t8C-v1-B0B" secondAttribute="trailing" constant="20" id="Rj4-dX-NdA"/>
-                            <constraint firstItem="t8C-v1-B0B" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-12" id="b6i-gs-J7B"/>
+                            <constraint firstItem="t8C-v1-B0B" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-6" id="b6i-gs-J7B"/>
                             <constraint firstItem="t8C-v1-B0B" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gUB-tC-mJy"/>
                             <constraint firstItem="t8C-v1-B0B" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="ukk-lC-ob6"/>
                         </constraints>
@@ -52,6 +52,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon.png" width="829" height="575"/>
+        <image name="icon.png" width="794" height="798"/>
     </resources>
 </document>

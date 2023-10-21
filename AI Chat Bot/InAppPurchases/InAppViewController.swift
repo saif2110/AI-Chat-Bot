@@ -45,7 +45,7 @@ class InAppViewController: UIViewController {
 
         // self.priceLabel.text = "Three days free trial. After free trial, \(String(describing: priceone ?? "")) billed weekly auto renewable."
           
-          self.priceLabel.text = "Unlock the full potential of our app with a pro membership with all features at just \(String(describing: priceone ?? "")) billed yearly auto renewable."
+          self.priceLabel.text = "Unlock the full potential with a pro membership. Three days free then just \(String(describing: priceone ?? "")) billed yearly auto renewable."
         
         
         stopIndicator()
