@@ -227,7 +227,7 @@
     </scenes>
     <resources>
         <image name="welcome1" width="430" height="932"/>
-        <image name="welcome2" width="428" height="926"/>
+        <image name="welcome2" width="421.66665649414062" height="913.66668701171875"/>
         <image name="welcome3" width="428" height="926"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
